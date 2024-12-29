@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="white"/>
+    
+    <!-- Chair Frame -->
+    <g stroke="black" fill="none" stroke-width="2">
+        <!-- Seat -->
+        <rect x="200" y="300" width="400" height="50"/>
+        
+        <!-- Back supports -->
+        <line x1="250" y1="300" x2="220" y2="100" stroke-width="3"/>
+        <line x1="550" y1="300" x2="580" y2="100" stroke-width="3"/>
+        
+        <!-- Top curved back -->
+        <path d="M220,100 Q400,80 580,100" stroke-width="3"/>
+        
+        <!-- Front legs -->
+        <line x1="250" y1="350" x2="220" y2="500"/>
+        <line x1="550" y1="350" x2="580" y2="500"/>
+        
+        <!-- Stretchers -->
+        <line x1="230" y1="450" x2="570" y2="450"/>
+    </g>
+    
+    <!-- Dimensions and Measurements -->
+    <g stroke="blue" fill="blue" font-family="Arial" font-size="14">
+        <!-- Width -->
+        <line x1="150" y1="325" x2="650" y2="325" stroke-dasharray="5,5"/>
+        <text x="350" y="320">24" - 26" width</text>
+        
+        <!-- Height -->
+        <line x1="150" y1="80" x2="150" y2="500" stroke-dasharray="5,5"/>
+        <text x="100" y="290" transform="rotate(-90, 100, 290)">32" - 34" total height</text>
+        
+        <!-- Seat Height -->
+        <text x="100" y="425">17" - 18" seat height</text>
+        
+        <!-- Back Angle -->
+        <path d="M600,300 A40,40 0 0,1 600,260" fill="none"/>
+        <text x="610" y="290">15° back angle</text>
+        
+        <!-- Depth -->
+        <text x="400" y="380">18" - 20" depth</text>
+        
+        <!-- Material Thickness Notes -->
+        <g font-size="12">
+            <text x="650" y="150">Back supports: 1" x 1"</text>
+            <text x="650" y="170">Seat frame: 3/4" x 4"</text>
+            <text x="650" y="190">Top rail: 3/4" x 1.5"</text>
+            <text x="650" y="210">Stretchers: 3/4" x 1.5"</text>
+        </g>
+    </g>
+    
+    <!-- Upholstery Pads (indicated by dashed lines) -->
+    <g stroke="green" stroke-dasharray="5,5" fill="none">
+        <rect x="220" y="290" width="360" height="70"/>
+        <path d="M230,95 Q400,75 570,95 L570,250 Q400,270 230,250 Z"/>
+    </g>
+</svg>
